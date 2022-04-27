@@ -1,28 +1,42 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="parallax">
+
+      <div style="width:85%;margin-left:7%;background-color: black;">
+          <router-view/>
+      </div>
+    
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+//import HelloWorld from './components/HelloWorld';
 
 export default {
   name: 'App',
+
   components: {
-    HelloWorld
-  }
-}
+   // HelloWorld,
+  },
+
+  data: () => ({
+    //
+  }),
+};
 </script>
 
+
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.parallax {
+  /* The image used */
+  background-image: url("./assets/images/background.jpg");
+
+  /* Set a specific height */
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 </style>
