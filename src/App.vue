@@ -1,7 +1,7 @@
 <template>
-  <div class="parallax">
+  <div style="background-color:rgb(200,200,200);"> 
 
-      <div style="width:85%;margin-left:7%;background-color: black;">
+      <div style="margin-left:8%;margin-right:8%;">
           <router-view/>
       </div>
     
@@ -29,7 +29,7 @@ export default {
 <style>
 .parallax {
   /* The image used */
-  background-image: url("./assets/images/background.jpg");
+  background-color: rgb(237,237,237);
 
   /* Set a specific height */
 
